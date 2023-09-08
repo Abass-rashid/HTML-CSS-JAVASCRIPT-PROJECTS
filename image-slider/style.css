@@ -15,12 +15,13 @@ body {
   height: 300px;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.3); */
   position: relative;
 }
 
 .image-container {
   display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
 .btn {
