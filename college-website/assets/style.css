@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+/* header section */
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(assests/banner.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+nav img {
+  width: 8rem;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.nav-links ul li::after{
+  content: ' ';
+  width: 0;
+  height: 2px;
+  background-color: chocolate;
+  margin: auto;
+  display: block;
+  transition: 0.4s;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.text-box h1 {
+  font-size: 50px;
+}
+.text-box p {
+  font-size: 15px;
+  color: #fff;
+  margin: 10px 0 40px;
+}
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  cursor: pointer;
+  position: relative;
+}
+.hero-btn:hover{
+  border: 1px solid #333;
+  background-color: #29de92;
+  transition: 0.5s linear;
+}
+nav .fa {
+  display: none;
+}
+@media (max-width: 768px) {
+  .text-box h1 {
+    font-size: 30px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    top: 0;
+    right: -200px;
+    background-color: #00204a;
+    width: 200px;
+    height: 100%;
+    text-align: left;
+    z-index: 2;
+    transition: 0.8s;
+    
+  }
+  .nav-links ul li::after{
+    background: #f44336;
+  }
+  
+  nav .fa {
+    display: block;
+    font-size: 20px;
+    margin: 10px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+}
+
+/* course section */
+.course {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding-top: 50px;
+}
+.course h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+p {
+  color: gray;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+.row {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+.course-col {
+  flex-basis: 31%;
+  background-color: #fff3f3;
+  border-radius: 10px;
+  padding: 12px 20px;
+  margin-bottom: 5%;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0 ;
+}
+.course-col:hover{
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+
+}
+
+@media (max-width: 768px) {
+
+  .row {
+    flex-direction: column;
+  }
+}
+/* campus styking */
+
+.campus{
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+  text-align: center;
+}
+.campus-col {
+  flex-basis: 32%;
+  border-radius: 15px;
+  padding-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.campus-col img {
+  width: 100%;
+  display: block;
+}
+
+.layer {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.layer:hover {
+  background-color: rgba(103, 182, 231, 0.3);
+  margin-top: 2rem;
+}
+.layer h3 {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 0.5s;
+}
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+/* ------- Facilities ------- */
+.facilities {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.facilities-col {
+  flex-basis: 31%;
+  margin-top: 3%;
+  border-radius: 10px;
+  text-align: left;
+}
+.facilities-col img {
+  width: 100%;
+  border-radius: 14px;
+}
+.facilities-col p {
+  padding: 0;
+}
+.facilities-col h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+/* 
+---- Call for Action ----- */
+.call-for-action {
+  width: 80%;
+  margin: 100px auto;
+  background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(assests/banner2.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+.call-for-action h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+@media (max-width: 768px) {
+  .call-for-action h2 {
+    font-size: 20px;
+  }
+}
+/* ----- footer ------ */
+footer {
+  background-color: #555;
+  color:#bbb;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #eee;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+.ft-main {
+  padding: 1.25rem 1.875rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.ft-title {
+  color: #fff;
+  font-size: 1.375rem;
+  padding-bottom: 0.625rem;
+}
+.container-footer {
+  flex: 1;
+}
+@media only screen and (min-width:700px) {
+  .ft-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (min-width:1240px) {
+  .ft-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .ft-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem;
+  }
+}
+/* ----- footer main ---- | newsletter form*/
+ 
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+input[type="email"] {
+  border: 0;
+  padding: 0.625rem;
+  margin-top: 0.3125rem;
+}
+input[type="submit"] {
+  border: 0;
+  padding: 0.625rem  0.925rem;
+  cursor: pointer;
+  color: #fff;
+  background-color: #00d188;
+  margin-top: 0.3125rem;
+}
+/* ----- footer social ------- */
+.ft-social {
+  padding: 0 1.875rem 1.25rem;
+}
+.ft-social-list {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #777;
+  padding-top: 1.25rem;
+}
+.ft-social-list li {
+  margin: 0.5rem;
+  font-size: 1.25rem;
+}
+/* ------footer legal ------- */
+.ft-legal {
+  padding: 0.9375rem;
+  background-color: #333;
+}
+.ft-legal-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ft-legal-list li {
+  margin: 0.125rem 0.625rem;
+  white-space: nowrap;
+}
+.ft-legal-list li:nth-last-child(2) {
+  flex: 1;
+}
