@@ -12,3 +12,7 @@ hideMenu.addEventListener("click", ()=> {
   navLinks.style.right = "-200px";
 })
 // end of toggle menu
+
+// copyright footer
+const year = document.querySelector("#current-year");
+year.innerHTML = new Date().getFullYear();
