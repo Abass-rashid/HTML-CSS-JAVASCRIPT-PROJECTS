@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar with drop down</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <header id="nav-menu">
+    <div class="container">
+      <div class="nav-start">
+        <a href="/" class="logo">
+          <img src="https://github.com/Evavic44/responsive-navbar-with-dropdown/blob/main/assets/images/logo.png?raw=true" alt="logo" width="35" height="35">
+        </a>
+        <nav class="menu">
+          <button id="hamburger" aria-expanded="false"></button>
+          <i class="bx bx-menu" aria-hidden="true"></i>
+          <div class="menu">
+            <ul class="menu-bar">
+              <li>
+                <button class="nav-link dropdown-btn" data-dropdown="dropdown1" aria-expanded="false">Browse
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div id="dropdown1 "  class="drpdown">
+                  <ul>
+                    <li>
+                      <a href="#best-of-day" class="dropdown-link">
+                      <img src="./assets/icons/botd.svg" class="icon" alt=""/>
+                      <div>
+                        <span class="drop-down-link-title">Best of the day</span>
+                        <p>Shorts is featured today by curators</p>
+                      </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+                    <li>
+                      <a href="#best-of-day" class="featured-streams">
+                      <img src="./assets/icons/fs.svg" class="icon" alt=""/>
+                      <div>
+                        <span class="drop-down-link-title">Featured Streams</span>
+                        <p>Leading Exclusive access</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#best-of-day" class="creative-feed">
+                      <img src="./assets/icons/cf.svg" class="icon" alt=""/>
+                      <div>
+                        <span class="drop-down-link-title">Creative feed</span>
+                        <p>see trending creations</p>
+                      </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <button class="nav-link dropdown-btn" data-dropdown="dropdown2" aria-expanded="false">Discover
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div id="dropdown2"  class="drpdown"></div>
+              </li>
+              <li><a href="/" class="nav-link">Jobs</a></li>
+              <li><a href="/" class="nav-link">Livestream</a></li>
+              <li><a href="/" class="nav-link">About</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="nav-end">
+        <div class="right-container">
+          <form class="search" role="search">
+            <input type="search" class="search" placeholder="search">
+            <i class="bx bx-search" aria-hidden="true"></i>
+            
+          </form>
+
+            <a href="#profile">
+            
+               <img src="https://github.com/Evavic44/responsive-navbar-with-dropdown/blob/main/assets/images/user.jpg?raw=true" width="30" height="30" alt="user-image">
+            </a>
+            <button class="btn btn-primary">Create</button>
+      
+        </div>
+      </div>
+    </div>
+  </header>
+</body>
+</html>
