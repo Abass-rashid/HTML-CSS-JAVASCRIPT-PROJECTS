@@ -3,7 +3,7 @@ body {
   font-family: monospace,sans-serif;
   background-color: #f7f7f7;
 }
-.weather-container {
+.container {
   background-color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   width: 60%;
