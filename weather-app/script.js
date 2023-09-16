@@ -4,7 +4,7 @@ const weatherDataEl = document.getElementById("weather-data");
 
 const cityInputEl = document.getElementById("city-input");
 
-const formEl = document.querySelector("form");
+const formEl = document.querySelector("form"); 
 
 formEl.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -19,7 +19,7 @@ async function getWeatherData(cityValue) {
     );
 
     if (!response.ok) {
-      throw new Error("Network response was not ok");
+      throw new Error("Network response is not ok");
     }
 
     const data = await response.json();
