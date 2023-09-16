@@ -1,0 +1,17 @@
+.container-text {
+  background-color: #ddd;
+  padding: 20px;
+  height: 40vh;
+  max-width: 400px ;
+  margin: 0 auto;
+}
+
+#more {
+  display: none;
+}
+ a {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
