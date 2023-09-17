@@ -2,6 +2,7 @@
 :root {
   --primary: #ffc636;
   --secondary: #0a0b5b;
+  --font: 'Rubik', sans-serif;
 }
 /* --- Reset --- */
 * {
@@ -15,6 +16,7 @@
 body {
   background-color: var(--secondary);
   overflow-x: hidden;
+  font-family: var(--font);
 }
 
 .button {
@@ -41,9 +43,60 @@ input,textarea {
   color: #f2f2f2;
 }
 /* ------Fonts -------- */
+h1,h2,h3,h4 {
+  color: #dddbff;
+  font-weight: normal;
+}
+p,li,a {
+  color: #9893d8;
+}
+h1,h3 {
+  font-size: 1.2rem;
+  /* text-align: center; */
+}
+h2 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.1rem;
+}
+.leading {
+  font-size: 1.1rem;
+}
 
 /* ------ mobile styles ------ */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+.site-nav {
+  margin: 5px 20px;
+}
+.site-nav li {
+  display: none;
+}
+.site-nav h1 {
+  grid-column: 1/6;
+  grid-row: 1;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--primary);
+}
 
+#welcome {
+  padding: 0 20px 20px 20px;
+}
+.welcome-text{
+  grid-column: 1/4;
+}
+.welcome-img {
+  grid-column: 4/8;
+}
+.welcome-img img {
+  width: 200%;
+}
+.welcome-text a{
+  margin: 20px 0;
+}
  /* small tablet styles */
  @media screen and (min-width: 620px) {
    
